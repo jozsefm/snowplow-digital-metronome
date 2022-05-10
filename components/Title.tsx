@@ -20,7 +20,9 @@ const TitleText = styled.p<TypographyProps>`
 `
 
 export default function TitleComponent() {
-  return <Title>
-    <TitleText fontSize={1}>digital metronome</TitleText>
-  </Title>
+  return (
+    <Title>
+      <TitleText fontSize={1}>digital metronome</TitleText>
+    </Title>
+  )
 }

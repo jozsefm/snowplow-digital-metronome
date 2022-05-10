@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import { typography, TypographyProps, color, ColorProps  } from 'styled-system'
+import { typography, TypographyProps, color, ColorProps } from 'styled-system'
 
 const Beat = styled.div`
-  background: ${({theme}) => `radial-gradient(ellipse 47% 47% at 50% 50%, ${theme.colors.beat} 0%, rgba(100, 188, 164, 0) 100%)`};
+  background: ${({ theme }) =>
+    `radial-gradient(ellipse 47% 47% at 50% 50%, ${theme.colors.beat} 0%, rgba(100, 188, 164, 0) 100%)`};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,9 +35,13 @@ const BeatText = styled.p<TypographyProps & ColorProps>`
 `
 
 export default function BeatComponent({ bpm }) {
-  return <Beat>
-    <BeatCircle bg='beat'>
-      <BeatText fontSize={2} color='dark'>{bpm}</BeatText>
-    </BeatCircle>
-  </Beat>
+  return (
+    <Beat>
+      <BeatCircle bg="beat">
+        <BeatText fontSize={2} color="dark">
+          {bpm}
+        </BeatText>
+      </BeatCircle>
+    </Beat>
+  )
 }

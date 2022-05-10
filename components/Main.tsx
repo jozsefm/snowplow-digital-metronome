@@ -10,5 +10,5 @@ const Main = styled.main<ColorProps>`
 `
 
 export default function MainComponent({ ...props }) {
-  return <Main bg='dark' color='primary' {...props} />
+  return <Main bg="dark" color="primary" {...props} />
 }

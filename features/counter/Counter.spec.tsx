@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 jest.mock('./counterAPI', () => ({
   fetchCount: (amount: number) =>
     new Promise<{ data: number }>((resolve) =>
-      setTimeout(() => resolve({ data: amount }), 500)
+      setTimeout(() => resolve({ data: amount }), 500),
     ),
 }))
 
@@ -19,7 +19,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     expect(screen.getByText('0')).toBeInTheDocument()
@@ -31,7 +31,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     user.click(screen.getByRole('button', { name: /decrement value/i }))
@@ -45,7 +45,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     user.click(screen.getByRole('button', { name: /increment value/i }))
@@ -59,7 +59,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     user.type(screen.getByLabelText(/set increment amount/i), '{backspace}5')
@@ -74,7 +74,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     user.type(screen.getByLabelText(/set increment amount/i), '{backspace}3')
@@ -89,7 +89,7 @@ describe('<Counter />', () => {
     render(
       <Provider store={store}>
         <Counter />
-      </Provider>
+      </Provider>,
     )
 
     user.click(screen.getByRole('button', { name: /add if odd/i }))

@@ -20,7 +20,7 @@ export const useForm =
           ...object,
           [`${element.getAttribute('name')}`]: element.value,
         }),
-        defaultValues
+        defaultValues,
       )
     await handler(data)
     form.reset()
