@@ -7,7 +7,7 @@ import {
   typography,
   TypographyProps
 } from 'styled-system'
-import { bpmRange } from '../constants/bpmRange'
+import { bpms } from '../constants/bpmData'
 
 const Buttons = styled.div`
   display: grid;
@@ -43,7 +43,7 @@ const Button = styled.button<ColorProps & BorderProps & TypographyProps>`
 export default function ButtonsComponent() {
   return (
     <Buttons>
-      {bpmRange.map((bpm) => (
+      {bpms.map((bpm) => (
         <Button bg="button" fontSize={0} borderRadius={0} key={bpm}>
           {bpm} BPM
         </Button>

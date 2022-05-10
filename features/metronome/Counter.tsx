@@ -1,26 +1,20 @@
 import { useState } from 'react'
-
-import { useAppSelector, useAppDispatch } from '../../app/hooks'
+import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import {
-  decrement,
-  increment,
-  incrementByAmount,
-  incrementAsync,
-  incrementIfOdd,
-  selectCount,
-} from './counterSlice'
-import styles from './Counter.module.css'
+  selectCurrentBPM
+} from './metronomeSlice'
+
 
 function Counter() {
   const dispatch = useAppDispatch()
-  const count = useAppSelector(selectCount)
+  const count = useAppSelector(selectCurrentBPM)
   const [incrementAmount, setIncrementAmount] = useState('2')
 
   const incrementValue = Number(incrementAmount) || 0
 
   return (
     <div>
-      <div className={styles.row}>
+      {/* <div className={styles.row}>
         <button
           className={styles.button}
           aria-label="Decrement value"
@@ -62,7 +56,7 @@ function Counter() {
         >
           Add If Odd
         </button>
-      </div>
+      </div> */}
     </div>
   )
 }

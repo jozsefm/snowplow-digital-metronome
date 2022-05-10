@@ -1,4 +1,6 @@
-export async function fetchCount(amount = 1): Promise<{ data: number }> {
+import { Song } from "../../models/Song"
+
+export async function fetchSongsByBPM(amount = 1): Promise<{ data: Song[] }> {
   const response = await fetch('/api/counter', {
     method: 'POST',
     headers: {
