@@ -6,22 +6,27 @@ import { theme } from '../theme'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Roboto Black';
+    font-family: 'Roboto-Black';
     font-style: normal;
     font-display: optional;
     src: url('/fonts/Roboto-Black.woff2') format('woff2');
   }
 
   @font-face {
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto-Regular';
     font-style: normal;
     font-display: optional;
     src: url('/fonts/Roboto-Regular.woff2') format('woff2');
   }
 
   body {
-    font-family: 'Roboto Regular', sans-serif;
+    font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
   }
 `
 
