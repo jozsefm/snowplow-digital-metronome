@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="150"
+   height="150"
+   viewBox="0 0 150 150"
+   version="1.1"
+   id="svg258"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview260"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="385px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.8473121"
+     inkscape:cx="94.461567"
+     inkscape:cy="158.06749"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Group_22304" />
+  <defs
+     id="defs130">
+    <filter
+       id="Polygon_276-2"
+       x="327.276"
+       y="80.398003"
+       width="245.448"
+       height="222.951"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset2" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur4" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood6" />
+      <feComposite
+         operator="in"
+         in2="blur"
+         id="feComposite8"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite10" />
+    </filter>
+    <linearGradient
+       id="linear-gradient"
+       x1="812.64136"
+       x2="812.64136"
+       y2="335.26398"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1.0507274,0.95172166)"
+       y1="204.93176">
+      <stop
+         offset="0"
+         stop-color="#6738b8"
+         id="stop13" />
+      <stop
+         offset="1"
+         stop-color="#0e9ba4"
+         id="stop15" />
+    </linearGradient>
+    <filter
+       id="Polygon_277-2"
+       x="365.46399"
+       y="115.388"
+       width="166.944"
+       height="154.03999"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset18" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-2"
+         id="feGaussianBlur20" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood22" />
+      <feComposite
+         operator="in"
+         in2="blur-2"
+         id="feComposite24"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite26" />
+    </filter>
+    <clipPath
+       id="clip-path">
+      <rect
+         id="Rectangle_9129"
+         data-name="Rectangle 9129"
+         width="86.310997"
+         height="76.865997"
+         fill="none"
+         x="0"
+         y="0" />
+    </clipPath>
+    <filter
+       id="Ellipse_93"
+       x="55"
+       y="247"
+       width="138"
+       height="138"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset31" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-3"
+         id="feGaussianBlur33" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood35" />
+      <feComposite
+         operator="in"
+         in2="blur-3"
+         id="feComposite37"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite39" />
+    </filter>
+    <filter
+       id="Ellipse_93-2"
+       x="105"
+       y="122"
+       width="138"
+       height="138"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset42" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-4"
+         id="feGaussianBlur44" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood46" />
+      <feComposite
+         operator="in"
+         in2="blur-4"
+         id="feComposite48"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite50" />
+    </filter>
+    <filter
+       id="Ellipse_93-3"
+       x="67"
+       y="259"
+       width="114"
+       height="114"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset53" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-5"
+         id="feGaussianBlur55" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood57" />
+      <feComposite
+         operator="in"
+         in2="blur-5"
+         id="feComposite59"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite61" />
+    </filter>
+    <filter
+       id="Ellipse_93-4"
+       x="117"
+       y="135"
+       width="114"
+       height="114"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset64" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-6"
+         id="feGaussianBlur66" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood68" />
+      <feComposite
+         operator="in"
+         in2="blur-6"
+         id="feComposite70"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite72" />
+    </filter>
+    <filter
+       id="Path_45758"
+       x="0"
+       y="0"
+       width="132"
+       height="132"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset75" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-7"
+         id="feGaussianBlur77" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood79" />
+      <feComposite
+         operator="in"
+         in2="blur-7"
+         id="feComposite81"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite83" />
+    </filter>
+    <filter
+       id="Ellipse_93-5"
+       x="14"
+       y="14"
+       width="104"
+       height="104"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset86" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-8"
+         id="feGaussianBlur88" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood90" />
+      <feComposite
+         operator="in"
+         in2="blur-8"
+         id="feComposite92"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite94" />
+    </filter>
+    <filter
+       id="Ellipse_93-6"
+       x="161"
+       y="22"
+       width="90"
+       height="90"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset97" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-9"
+         id="feGaussianBlur99" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood101" />
+      <feComposite
+         operator="in"
+         in2="blur-9"
+         id="feComposite103"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite105" />
+    </filter>
+    <filter
+       id="Ellipse_93-7"
+       x="234"
+       y="146"
+       width="90"
+       height="90"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset108" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-10"
+         id="feGaussianBlur110" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood112" />
+      <feComposite
+         operator="in"
+         in2="blur-10"
+         id="feComposite114"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite116" />
+    </filter>
+    <filter
+       id="Ellipse_93-8"
+       x="201"
+       y="273"
+       width="90"
+       height="90"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="4"
+         dy="4"
+         input="SourceAlpha"
+         id="feOffset119" />
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur-11"
+         id="feGaussianBlur121" />
+      <feFlood
+         flood-opacity="0.102"
+         id="feFlood123" />
+      <feComposite
+         operator="in"
+         in2="blur-11"
+         id="feComposite125"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite127" />
+    </filter>
+  </defs>
+  <g
+     id="Group_32603"
+     data-name="Group 32603"
+     transform="translate(-190.06924,-163.62767)">
+    <g
+       id="Group_22304"
+       data-name="Group 22304"
+       transform="translate(-277,-62)">
+      <g
+         id="Group_22300"
+         data-name="Group 22300"
+         transform="translate(58.071,156.351)" />
+      <g
+         id="Group_22301"
+         data-name="Group 22301"
+         transform="translate(-312.19669,43.754977)">
+        <g
+           transform="translate(408.93,68.65)"
+           filter="url(#Polygon_277-2)"
+           id="g174">
+          <path
+             id="Polygon_277-2-2"
+             data-name="Polygon 277-2"
+             d="m 878.094,195.038 a 20,20 0 0 1 17.324,10.006 l 24.242,42.02 a 20,20 0 0 1 0,19.989 l -24.242,42.02 a 20,20 0 0 1 -17.324,10.005 h -48.459 a 20,20 0 0 1 -17.324,-10.006 l -24.242,-42.02 a 20,20 0 0 1 0,-19.989 l 24.242,-42.02 a 20,20 0 0 1 17.324,-10.005 z"
+             transform="translate(-408.93,-68.65)"
+             fill="url(#linear-gradient)"
+             style="fill:url(#linear-gradient)" />
+        </g>
+      </g>
+      <g
+         id="Artwork_4"
+         data-name="Artwork 4"
+         transform="translate(541.88731,299.83598)">
+        <g
+           id="Group_15913"
+           data-name="Group 15913"
+           transform="translate(-43.155,-38.433)"
+           clip-path="url(#clip-path)">
+          <path
+             id="Path_28557"
+             data-name="Path 28557"
+             d="M 85.431,34.719 67.522,3.7 A 8.07,8.07 0 0 0 61.1,0.023 H 47.739 a 1.285,1.285 0 0 0 -0.369,0 H 25.27 A 8.026,8.026 0 0 0 18.845,3.7 L 0.922,34.719 a 8.1,8.1 0 0 0 0,7.412 l 17.909,31.033 a 8.062,8.062 0 0 0 6.422,3.706 H 61.1 a 8.062,8.062 0 0 0 6.422,-3.706 L 85.431,42.13 a 8.1,8.1 0 0 0 0,-7.412 M 65.293,5 71.833,16.324 60.377,35.929 52.877,23.084 A 1.284,1.284 0 0 0 51.77,22.449 H 36.887 L 48.287,2.591 H 61.1 a 5.539,5.539 0 0 1 4.193,2.392 m -21.3,32.259 -7.15,-12.223 h 14.188 l 7.146,12.225 z M 41.66,38.482 34.6,50.575 27.512,38.424 34.569,26.332 Z m 2.259,1.344 h 14.11 L 51.016,51.845 H 36.858 Z M 21.075,5 a 5.5,5.5 0 0 1 4.193,-2.392 h 20.05 L 33.92,22.45 H 10.991 Z M 3.151,36.018 9.5,25.018 H 32.355 L 24.9,37.775 a 1.284,1.284 0 0 0 0,1.3 l 7.456,12.771 H 9.5 L 3.151,40.86 a 5.571,5.571 0 0 1 0,-4.843 M 25.268,74.3 A 5.528,5.528 0 0 1 21.075,71.879 L 10.975,54.413 H 33.831 L 45.332,74.3 Z M 65.293,71.88 A 5.528,5.528 0 0 1 61.1,74.3 H 48.314 l -11.5,-19.887 h 14.94 a 1.284,1.284 0 0 0 1.107,-0.635 L 60.3,41.038 71.745,60.688 Z M 83.2,40.846 73.236,58.12 61.836,38.528 73.325,18.877 83.217,36 a 5.571,5.571 0 0 1 0,4.843"
+             transform="translate(-0.021,-0.008)"
+             fill="#ffffff" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

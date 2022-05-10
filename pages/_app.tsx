@@ -2,20 +2,28 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux'
 import type { AppProps } from 'next/app'
 import store from '../app/store'
+import { theme } from '../theme'
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Roboto Black';
+    font-style: normal;
+    font-display: optional;
+    src: url('/fonts/Roboto-Black.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-display: optional;
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2');
+  }
+
   body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 400;
   }
 `
-
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

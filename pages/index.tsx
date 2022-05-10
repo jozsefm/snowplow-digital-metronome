@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 
 import Counter from '../features/counter/Counter'
 import styles from '../styles/Home.module.css'
@@ -10,12 +9,10 @@ const IndexPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Redux Toolkit</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Snowplow Digital Metronome</title>
       </Head>
       <Title>My page</Title>
       <header className={styles.header}>
-        <Image src="/logo.svg" className={styles.logo} alt="logo" />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
