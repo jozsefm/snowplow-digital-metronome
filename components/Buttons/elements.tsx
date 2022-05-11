@@ -34,6 +34,7 @@ export const Button = styled.button<ColorProps & BorderProps & TypographyProps &
   padding: 0;
   color: ${({ theme, current }) => `${current ? theme.colors.dark : 'inherit'}`};;
   transition: background ease-out 0.2s, color ease-out 0.2s;
+  user-select: none;
 
   &:hover {
     cursor: pointer;
