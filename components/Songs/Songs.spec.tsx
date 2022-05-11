@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import user from '@testing-library/user-event'
+import { makeStore } from 'app/store'
+import Counter from 'components/Songs/Songs'
 import { Provider } from 'react-redux'
 
 jest.mock('./counterAPI', () => ({
@@ -9,8 +11,6 @@ jest.mock('./counterAPI', () => ({
     ),
 }))
 
-import { makeStore } from '../../app/store'
-import Counter from './Counter'
 
 describe('<Counter />', () => {
   it('renders the component', () => {
@@ -30,7 +30,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Counter/>
       </Provider>,
     )
 
@@ -44,7 +44,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Counter/>
       </Provider>,
     )
 

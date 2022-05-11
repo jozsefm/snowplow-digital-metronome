@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { color, ColorProps, typography, TypographyProps } from 'styled-system'
 
-const Songs = styled.div`
+export const Songs = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,28 +10,25 @@ const Songs = styled.div`
   height: auto;
 `
 
-const SongList = styled.div<ColorProps>`
+export const SongList = styled.div<ColorProps>`
   color: white;
 `
 
-const SongsText = styled.p<TypographyProps & ColorProps>`
+export const SongsText = styled.p<TypographyProps & ColorProps>`
   ${typography}
   ${color}
   font-family: "Roboto-Black", sans-serif;
   font-weight: 900;
   letter-spacing: 0.78px;
   text-align: center;
+  margin-bottom: 5px;
 `
 
-export default function SongsComponent({ songs }) {
-  return (
-    <Songs>
-      <SongList bg="beat">
-        <SongsText fontSize={0} color="primary">
-          Songs that use this BPM:
-        </SongsText>
-        {songs}
-      </SongList>
-    </Songs>
-  )
-}
+export const SongItem = styled(SongsText)`
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 1.33px;
+  line-height: 20px;
+  font-size: 13px;
+`

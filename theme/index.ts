@@ -6,6 +6,7 @@ export const theme = {
     button: 'rgb(45, 28, 63)',
     buttonLight: 'rgba(45, 28, 63, 0.8)',
     buttonActive: 'rgb(142, 172, 255)',
+    buttonActiveLight: 'rgba(142, 172, 255, 0.8)',
   },
   fontSizes: [14, 18, 24],
   radii: [5],

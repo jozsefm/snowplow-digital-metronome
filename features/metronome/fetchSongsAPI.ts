@@ -1,4 +1,4 @@
-import { Song } from "../../models/Song"
+import { Song } from "models/Song"
 
 export async function fetchSongsByBPM(amount = 1): Promise<{ data: Song[] }> {
   const response = await fetch('/api/counter', {

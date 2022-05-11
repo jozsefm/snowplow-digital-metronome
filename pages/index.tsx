@@ -1,11 +1,11 @@
+import Beat from 'components/Beat/Beat'
+import Buttons from 'components/Buttons/Buttons'
+import Main from 'components/Main'
+import Metronome from 'components/Metronome'
+import Songs from 'components/Songs/Songs'
+import Title from 'components/Title'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Beat from '../components/Beat'
-import Buttons from '../components/Buttons'
-import Main from '../components/Main'
-import Metronome from '../components/Metronome'
-import Songs from '../components/Songs'
-import Title from '../components/Title'
 
 const IndexPage: NextPage = () => {
   return (
@@ -15,10 +15,10 @@ const IndexPage: NextPage = () => {
       </Head>
       <Main>
         <Metronome>
-          <Title />
-          <Beat bpm={72} />
-          <Buttons />
-          <Songs songs={[]}/>
+          <Title/>
+          <Beat/>
+          <Buttons/>
+          <Songs/>
         </Metronome>
       </Main>
     </>

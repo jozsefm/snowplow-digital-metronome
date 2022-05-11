@@ -1,8 +1,8 @@
+import store from 'app/store'
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import store from '../app/store'
-import { theme } from '../theme'
+import { theme } from 'theme'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

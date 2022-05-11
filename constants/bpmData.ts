@@ -1,4 +1,4 @@
-import { Song } from '../models/Song'
+import { Song } from 'models/Song'
 import bpmJson from './bpm.json'
 
 export const bpms = [72, 74, 82, 84, 128, 138]
@@ -9,9 +9,15 @@ export interface Songs {
 
 export const localSongs: Songs = bpmJson.reduce((acc, song) => {
   const [title, author, bpm] = song
+
+  if (!acc[bpm]) {
+    acc[bpm] = []
+  }
+
   acc[bpm] = [
     ...acc[bpm],
     new Song(title, author, bpm)
   ]
+  
   return acc
 }, {})

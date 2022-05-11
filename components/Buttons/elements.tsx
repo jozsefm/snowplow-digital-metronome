@@ -7,9 +7,8 @@ import {
   typography,
   TypographyProps
 } from 'styled-system'
-import { bpms } from '../constants/bpmData'
 
-const Buttons = styled.div`
+export const Buttons = styled.div`
   display: grid;
   width: 300px;
   height: 81px;
@@ -20,10 +19,11 @@ const Buttons = styled.div`
   row-gap: 11px;
 `
 
-const Button = styled.button<ColorProps & BorderProps & TypographyProps>`
+export const Button = styled.button<ColorProps & BorderProps & TypographyProps & { current: boolean }>`
   ${color}
   ${border}
   ${typography}
+  background: ${({ theme, current }) => `${current ? theme.colors.buttonActive : theme.colors.button}`};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,22 +32,11 @@ const Button = styled.button<ColorProps & BorderProps & TypographyProps>`
   letter-spacing: 0.78px;
   border: 0;
   padding: 0;
-  color: inherit;
+  color: ${({ theme, current }) => `${current ? theme.colors.dark : 'inherit'}`};;
+  transition: background ease-out 0.2s, color ease-out 0.2s;
 
   &:hover {
     cursor: pointer;
-    background: ${({ theme }) => `${theme.colors.buttonLight}`};
+    background: ${({ theme, current }) => `${current ? theme.colors.buttonActiveLight : theme.colors.buttonLight}`};
   }
 `
-
-export default function ButtonsComponent() {
-  return (
-    <Buttons>
-      {bpms.map((bpm) => (
-        <Button bg="button" fontSize={0} borderRadius={0} key={bpm}>
-          {bpm} BPM
-        </Button>
-      ))}
-    </Buttons>
-  )
-}
