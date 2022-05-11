@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import type { AppState } from 'app/store'
 import { localSongs } from 'constants/bpmData'
-import { fetchSongsByBPM } from 'features/metronome/fetchSongsAPI'
 import { Song } from 'models/Song'
+import { getSongsByBPM } from 'services/songs/getSongsService'
 
 export interface MetronomeState {
   bpm: number | null
@@ -21,8 +21,8 @@ const initialState: MetronomeState = {
 export const getRemoteSongs = createAsyncThunk(
   'metronome/getRemoteSongs',
   async (bpm: number) => {
-    const response = await fetchSongsByBPM(bpm)
-    return response.data
+    const response = await getSongsByBPM(bpm)
+    return response.songs
   },
 )
 
@@ -36,7 +36,9 @@ export const metronomeSlice = createSlice({
         state.localSongs = []
       } else {
         state.bpm = payload
-        state.localSongs = localSongs[payload]
+        // I map it to an object literal to avoid puttin non-serializable data into the store
+        // see: https://redux.js.org/style-guide/#do-not-put-non-serializable-values-in-state-or-actions
+        state.localSongs = localSongs[payload].map(song => ({...song}))
       }
     },
   },
