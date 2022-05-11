@@ -1,30 +1,28 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import type { AppState } from 'app/store'
 import { localSongs } from 'constants/bpmData'
-import { Song } from 'models/Song'
-import { getSongsByBPM } from 'services/songs/getSongsService'
+import { getSongsByBPM, RemoteSongsResponse } from 'services/songs/getSongsService'
+import { RequestStatuses } from 'types/RequestStatus'
+import { Song } from 'types/Song'
 
 export interface MetronomeState {
   bpm: number | null
   localSongs: Song[]
   remoteSongs: Song[]
-  fetchStatus: 'idle' | 'loading' | 'failed'
+  fetchStatus: RequestStatuses
 }
 
 const initialState: MetronomeState = {
   bpm: null,
   localSongs: [],
   remoteSongs: [],
-  fetchStatus: 'idle'
+  fetchStatus: RequestStatuses.INITIAL,
 }
 
-export const getRemoteSongs = createAsyncThunk(
-  'metronome/getRemoteSongs',
-  async (bpm: number) => {
-    const response = await getSongsByBPM(bpm)
-    return response.songs
-  },
-)
+export const getRemoteSongs = createAsyncThunk('metronome/getRemoteSongs', async (bpm: number) => {
+  const response = await getSongsByBPM(bpm)
+  return response
+})
 
 export const metronomeSlice = createSlice({
   name: 'metronome',
@@ -36,20 +34,18 @@ export const metronomeSlice = createSlice({
         state.localSongs = []
       } else {
         state.bpm = payload
-        // I map it to an object literal to avoid puttin non-serializable data into the store
-        // see: https://redux.js.org/style-guide/#do-not-put-non-serializable-values-in-state-or-actions
-        state.localSongs = localSongs[payload].map(song => ({...song}))
+        state.localSongs = localSongs[payload]
       }
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(getRemoteSongs.pending, (state) => {
-        state.fetchStatus = 'loading'
+        state.fetchStatus = RequestStatuses.LOADING
       })
-      .addCase(getRemoteSongs.fulfilled, (state, action: PayloadAction<Song[]>) => {
-        state.fetchStatus = 'idle'
-        state.remoteSongs = action.payload
+      .addCase(getRemoteSongs.fulfilled, (state, action: PayloadAction<RemoteSongsResponse>) => {
+        state.fetchStatus = action.payload.status
+        state.remoteSongs = action.payload.songs
       })
   },
 })

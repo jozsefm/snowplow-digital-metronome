@@ -15,10 +15,10 @@ const IndexPage: NextPage = () => {
       </Head>
       <Main>
         <Metronome>
-          <Title/>
-          <Beat/>
-          <Buttons/>
-          <Songs/>
+          <Title />
+          <Beat />
+          <Buttons />
+          <Songs />
         </Metronome>
       </Main>
     </>

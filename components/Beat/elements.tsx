@@ -10,7 +10,7 @@ const pulsating = keyframes`
 
 export const Beat = styled.div<{ pulsating: boolean }>`
   ::before {
-    content: "";
+    content: '';
     display: block;
     background: ${({ theme }) =>
       `radial-gradient(ellipse 47% 47% at 50% 50%, ${theme.colors.beat} 0%, rgba(100, 188, 164, 0) 100%)`};
@@ -19,8 +19,7 @@ export const Beat = styled.div<{ pulsating: boolean }>`
     position: absolute;
     z-index: 0;
     transition: transform ease-out 300ms;
-    transform: ${({ pulsating }) =>
-      pulsating ? 'scale(0)' : 'scale(1)'};
+    transform: ${({ pulsating }) => (pulsating ? 'scale(0)' : 'scale(1)')};
   }
   display: flex;
   flex-direction: column;

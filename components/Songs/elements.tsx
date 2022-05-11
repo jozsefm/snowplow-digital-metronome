@@ -25,7 +25,7 @@ export const SongsText = styled.p<TypographyProps & ColorProps>`
 `
 
 export const SongItem = styled(SongsText)`
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
   font-weight: 200;
   color: white;
   letter-spacing: 1.33px;

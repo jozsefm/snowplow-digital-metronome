@@ -1,12 +1,5 @@
 import styled from 'styled-components'
-import {
-  border,
-  BorderProps,
-  color,
-  ColorProps,
-  typography,
-  TypographyProps
-} from 'styled-system'
+import { border, BorderProps, color, ColorProps, typography, TypographyProps } from 'styled-system'
 
 export const Buttons = styled.div`
   display: grid;
@@ -32,7 +25,7 @@ export const Button = styled.button<ColorProps & BorderProps & TypographyProps &
   letter-spacing: 0.78px;
   border: 0;
   padding: 0;
-  color: ${({ theme, current }) => `${current ? theme.colors.dark : 'inherit'}`};;
+  color: ${({ theme, current }) => `${current ? theme.colors.dark : 'inherit'}`};
   transition: background ease-out 0.2s, color ease-out 0.2s;
   user-select: none;
 

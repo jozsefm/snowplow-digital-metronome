@@ -1,8 +1,6 @@
-import { useAppSelector } from 'app/hooks';
-import { Beat, BeatCircle, BeatText, Pulse } from "components/Beat/elements";
-import {
-  selectCurrentBPM
-} from 'features/metronome/metronomeSlice';
+import { useAppSelector } from 'app/hooks'
+import { Beat, BeatCircle, BeatText, Pulse } from 'components/Beat/elements'
+import { selectCurrentBPM } from 'features/metronome/metronomeSlice'
 
 export default function BeatComponent() {
   const currentBPM = useAppSelector(selectCurrentBPM)

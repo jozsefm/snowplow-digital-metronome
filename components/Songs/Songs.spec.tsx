@@ -6,11 +6,8 @@ import { Provider } from 'react-redux'
 
 jest.mock('./counterAPI', () => ({
   fetchCount: (amount: number) =>
-    new Promise<{ data: number }>((resolve) =>
-      setTimeout(() => resolve({ data: amount }), 500),
-    ),
+    new Promise<{ data: number }>((resolve) => setTimeout(() => resolve({ data: amount }), 500)),
 }))
-
 
 describe('<Counter />', () => {
   it('renders the component', () => {
@@ -30,7 +27,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter/>
+        <Counter />
       </Provider>,
     )
 
@@ -44,7 +41,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter/>
+        <Counter />
       </Provider>,
     )
 

@@ -1,5 +1,6 @@
 export enum RequestStatuses {
   SUCCESS,
   ERROR,
-  INITIAL
+  INITIAL,
+  LOADING,
 }

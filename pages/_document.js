@@ -10,8 +10,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
         })
 
       const initialProps = await Document.getInitialProps(ctx)
@@ -33,20 +32,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link
-            rel="preload"
-            href="/fonts/Roboto-Regular.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/Roboto-Black.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
+          <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
           <link rel="icon" href="/icon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

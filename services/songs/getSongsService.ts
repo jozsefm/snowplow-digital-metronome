@@ -1,34 +1,31 @@
-import { Song } from "models/Song"
-import { RequestStatuses } from "../serviceTypes"
+import { Song } from 'types/Song'
+import { RequestStatuses } from '../../types/RequestStatus'
 
-export async function getSongsByBPM(bpm: number): Promise<{ songs?: Song[], status: RequestStatuses }> {
+export interface RemoteSongsResponse {
+  songs?: Song[]
+  status: RequestStatuses
+}
+
+export async function getSongsByBPM(bpm: number): Promise<RemoteSongsResponse> {
   try {
     const options = {
       method: 'POST',
       body: JSON.stringify({
-        bpm
-      }) 
+        bpm,
+      }),
     }
 
     const result = await fetch(`/api/songs`, options)
     const json = await result.json()
-    const serverAnswer = {
-      status: result.status,
-      ...json
+
+    return {
+      songs: json.songs,
+      status: RequestStatuses.SUCCESS,
     }
-    return mapAnswer(serverAnswer)
   } catch (error) {
-    console.error('Error sending answer: ', error)
+    console.error('Error fetching remote songs: ', error)
     return {
       status: RequestStatuses.ERROR,
     }
-  }
-}
-
-function mapAnswer(serverResponse) {
-  console.log(serverResponse)
-  return {
-    songs: [new Song('', '', '')],
-    status: RequestStatuses.SUCCESS
   }
 }
