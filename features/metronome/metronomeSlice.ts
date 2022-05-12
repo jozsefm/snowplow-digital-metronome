@@ -33,6 +33,7 @@ export const metronomeSlice = createSlice({
         state.bpm = null
         state.localSongs = []
         state.remoteSongs = []
+        state.fetchStatus = RequestStatuses.INITIAL
       } else {
         state.bpm = payload
         state.localSongs = localSongs[payload]

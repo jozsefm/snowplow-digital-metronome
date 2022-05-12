@@ -45,7 +45,7 @@ export const LoadingText = styled(SongItem)`
 
 export const ErrorText = styled(LoadingText)`
   color: red;
-  max-width: 210px;
+  max-width: 220px;
 `
 
 export const SongScrollArea = styled.div`

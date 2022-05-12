@@ -3,6 +3,8 @@ import user from '@testing-library/user-event'
 import { makeStore } from 'app/store'
 import Songs from 'components/Songs/Songs'
 import { Provider } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
+import { theme } from 'theme'
 
 jest.mock('../../services/songs/getSongsService', () => ({
   getSongsByBPM: (amount: number) =>
@@ -15,7 +17,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
@@ -27,7 +31,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
@@ -41,7 +47,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
@@ -55,7 +63,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
@@ -70,7 +80,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
@@ -85,7 +97,9 @@ describe('<Songs />', () => {
 
     render(
       <Provider store={store}>
-        <Songs />
+        <ThemeProvider theme={theme}>
+          <Songs/>  
+        </ThemeProvider>
       </Provider>,
     )
 
