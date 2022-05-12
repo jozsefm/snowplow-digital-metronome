@@ -4,14 +4,17 @@ import { color, ColorProps, typography, TypographyProps } from 'styled-system'
 export const Songs = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   width: auto;
-  height: auto;
+  max-height: 119px;
 `
 
 export const SongList = styled.div<ColorProps>`
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const SongsText = styled.p<TypographyProps & ColorProps>`
@@ -31,4 +34,32 @@ export const SongItem = styled(SongsText)`
   letter-spacing: 1.33px;
   line-height: 20px;
   font-size: 13px;
+`
+
+export const LoadingText = styled(SongItem)`
+  margin: 10px auto 0 auto;
+  font-weight: bold;
+  max-width: 150px;
+  text-align: center;
+`
+
+export const ErrorText = styled(LoadingText)`
+  color: red;
+  max-width: 210px;
+`
+
+export const SongScrollArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: ${({ theme }) => `${theme.sizes.appWidth}`};
+
+  .simplebar-scrollbar::before {
+    background: white;
+  }
+
+  [data-simplebar] {
+    height: 128px;
+  }
 `

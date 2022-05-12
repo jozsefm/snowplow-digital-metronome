@@ -1,21 +1,21 @@
 import { render, screen } from '@testing-library/react'
 import user from '@testing-library/user-event'
 import { makeStore } from 'app/store'
-import Counter from 'components/Songs/Songs'
+import Songs from 'components/Songs/Songs'
 import { Provider } from 'react-redux'
 
-jest.mock('./counterAPI', () => ({
-  fetchCount: (amount: number) =>
+jest.mock('../../services/songs/getSongsService', () => ({
+  getSongsByBPM: (amount: number) =>
     new Promise<{ data: number }>((resolve) => setTimeout(() => resolve({ data: amount }), 500)),
 }))
 
-describe('<Counter />', () => {
+describe('<Songs />', () => {
   it('renders the component', () => {
     const store = makeStore()
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 
@@ -27,7 +27,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 
@@ -41,7 +41,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 
@@ -55,7 +55,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 
@@ -70,7 +70,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 
@@ -85,7 +85,7 @@ describe('<Counter />', () => {
 
     render(
       <Provider store={store}>
-        <Counter />
+        <Songs />
       </Provider>,
     )
 

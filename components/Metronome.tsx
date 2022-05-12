@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Metronome = styled.div`
-  width: 476px;
+  width: ${({ theme }) => `${theme.sizes.appWidth}`};
   height: 681px;
   display: flex;
   flex-direction: column;

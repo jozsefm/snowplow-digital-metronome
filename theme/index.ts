@@ -8,6 +8,9 @@ export const theme = {
     buttonActive: 'rgb(142, 172, 255)',
     buttonActiveLight: 'rgba(142, 172, 255, 0.8)',
   },
+  sizes: {
+    appWidth: '476px',
+  },
   fontSizes: [14, 18, 24],
   radii: [5],
 }

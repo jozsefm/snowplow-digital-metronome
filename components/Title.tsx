@@ -6,7 +6,7 @@ const Title = styled.div`
   height: 134px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `
 
@@ -17,6 +17,7 @@ const TitleText = styled.p<TypographyProps>`
   text-transform: uppercase;
   height: 21px;
   font-weight: normal;
+  padding: 64px 0 49px 0;
 `
 
 export default function TitleComponent() {
