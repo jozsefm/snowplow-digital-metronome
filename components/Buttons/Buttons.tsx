@@ -1,8 +1,8 @@
 import { useAppDispatch, useAppSelector } from 'app/hooks'
 import { Button, Buttons } from 'components/Buttons/elements'
 import { bpms } from 'constants/bpmData'
-import { getRemoteSongs, selectCurrentBPM, setBPM } from 'features/metronome/metronomeSlice'
 import { useMemo } from 'react'
+import { getRemoteSongs, selectCurrentBPM, setBPM } from 'state/metronome/metronomeSlice'
 
 export default function ButtonsComponent() {
   const dispatch = useAppDispatch()

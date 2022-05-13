@@ -9,10 +9,10 @@ const config: InitialOptionsTsJest = {
       tsconfig: 'tsconfig.test.json',
     },
   },
-  modulePaths: ["<rootDir>/."],
-  moduleNameMapper:{
-    "\\.(css|less|sass|scss)$": "<rootDir>/mocks/styleMock.js"
-}
+  modulePaths: ['<rootDir>/.'],
+  moduleNameMapper: {
+    '\\.(css|less|sass|scss)$': '<rootDir>/mocks/styleMock.js',
+  },
 }
 
 export default config

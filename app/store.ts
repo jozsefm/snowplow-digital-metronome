@@ -1,5 +1,5 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
-import metronomeReducer from 'features/metronome/metronomeSlice'
+import metronomeReducer from 'state/metronome/metronomeSlice'
 
 export function makeStore() {
   return configureStore({
